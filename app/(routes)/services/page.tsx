@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -74,6 +75,33 @@ const pricingPlans: PricingPlan[] = [
   },
 ];
 
+const services = [
+  {
+    title: "Web Development",
+    description: "We choose our teams carefully. Our people are the secret to great work."
+  },
+  {
+    title: "Desktop Development",
+    description: "Benefit from automatic updates to all boards any time you need to make a change to your website."
+  },
+  {
+    title: "Mobile Development",
+    description: "We've user tested our own process by shipping over 1k products for clients."
+  },
+  {
+    title: "Cyber Security",
+    description: "We stay lean and help your product do one thing well."
+  },
+  {
+    title: "Graphic Design",
+    description: "We actively pursue the right balance between functionality and aesthetics, creating delightful experiences."
+  },
+  {
+    title: "Networking",
+    description: "From boarding passes to movie tickets, there's pretty much nothing you can't store with Preline."
+  }
+];
+
 interface PricingHeaderProps {
   title: string;
   subtitle: string;
@@ -125,7 +153,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isYearly }) => {
           </div>
           <div className="flex items-baseline mt-2">
             <span className="text-3xl font-bold">${price}</span>
-            <span className="ml-1 text-gray-500">/{isYearly ? 'year' : 'month'}</span>
+            <span className="ml-1 text-gray-700 dark:text-yellow-400">/{isYearly ? 'year' : 'month'}</span>
           </div>
           <CardDescription className="mt-2">{plan.description}</CardDescription>
         </CardHeader>
@@ -195,12 +223,58 @@ const PricingTable: React.FC<PricingTableProps> = ({ plans, isYearly }) => (
 
 const PricingPage: React.FC = () => {
   const [isYearly, setIsYearly] = useState(false);
-  const [viewType, setViewType] = useState("card");
+  const [viewType, setViewType] = useState<"card" | "table">("card");
 
   const togglePricingPeriod = (value: string) => setIsYearly(value === "yearly");
 
   return (
     <div className="container mx-auto px-4 py-16">
+      <div >
+        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 sm:px-6 pb-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white  sm:text-4xl">Services</h2>
+            <p className="mt-4 text-gray-700 dark:text-white">Stay in the know with insights from industry experts.</p>
+            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+              {services.map((service, index) => (
+                <div key={index} className="border-t border-gray-200 dark:border-yellow-700 pt-4">
+                  <dt className="font-medium text-black dark:text-yellow-400">{service.title}</dt>
+                  <dd className="mt-2 text-sm text-gray-700  dark:text-white">{service.description}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+            <Image
+              src="https://images.unsplash.com/photo-1531765408077-9a1f85f90df1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwzMTk0OTA4OHx8ZW58MHx8fHx8"
+              alt="Service image 1"
+              width={400}
+              height={320}
+              className="rounded-lg bg-gray-100"
+            />
+            <Image
+              src="https://images.unsplash.com/photo-1563920443079-783e5c786b83?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Service image 2"
+              width={400}
+              height={320}
+              className="rounded-lg bg-gray-100"
+            />
+            <Image
+              src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlY2glMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Service image 3"
+              width={400}
+              height={320}
+              className="rounded-lg bg-gray-100"
+            />
+            <Image
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaCUyMGltYWdlfGVufDB8fDB8fHww"
+              alt="Service image 4"
+              width={400}
+              height={320}
+              className="rounded-lg bg-gray-100"
+            />
+          </div>
+        </div>
+      </div>
       <PricingHeader title="Pricing Plans" subtitle="Choose the plan that's right for you" />
       <div className="flex justify-center space-x-4 mb-8">
         <Button
