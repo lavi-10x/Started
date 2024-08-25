@@ -30,8 +30,8 @@ const iconMap: { [key: string]: JSX.Element } = {
 };
 
 const WebDevProject: React.FC<WebDevProjectProps> = ({ title, description, image, techStack, link }) => (
-  <ShineBorder className="group dark:bg-white  dark:bg-opacity-0"  color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}>
-  <Card className="group dark:bg-white border-none dark:bg-opacity-0">
+  <ShineBorder className="group  bg-opacity-0 dark:bg-white  dark:bg-opacity-0"  color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}>
+  <Card className="group bg-opacity-0 dark:bg-white border-none dark:bg-opacity-0">
     <CardHeader>
       <CardTitle>{title}</CardTitle>
     </CardHeader>
@@ -45,7 +45,7 @@ const WebDevProject: React.FC<WebDevProjectProps> = ({ title, description, image
           className="group-hover:opacity-75 transition-opacity duration-300"
         />
       </div>
-      <CardDescription className="mt-4">{description}</CardDescription>
+      <CardDescription className="mt-4 text-gray-900 dark:text-white">{description}</CardDescription>
     </CardContent>
     <CardFooter className="flex justify-between items-center">
       <div className="flex space-x-2">

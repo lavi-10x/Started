@@ -61,9 +61,9 @@ const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="flex">
-      <CarouselPrevious />
-      <CarouselNext />        
+      <div className="text-yellow-600 dark:text-yellow-300">
+      <CarouselPrevious className="text-yellow-600 dark:text-yellow-300"/>
+      <CarouselNext className="text-yellow-600 dark:text-yellow-300"/>        
       </div>
 
     </Carousel>
@@ -78,7 +78,7 @@ export default function AboutUsPage() {
   ];
 
   return (
-    <div className=" text-gray-900 dark:text-white">
+    <div className=" overflow-hidden text-gray-900 dark:text-white">
       <div className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-center mb-16">
@@ -98,7 +98,7 @@ export default function AboutUsPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200">We are Creative Since 2005</h2>
+              <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200">We are Creative Since 2022</h2>
               <p className="text-lg">
                 Driven by a passion for seamless user experiences, we&apos;ve meticulously curated our approach to empower creators, designers, and developers alike. Our mission is to provide comprehensive solutions, enabling you to build intuitive, beautiful interfaces that resonate with users on every interaction.
               </p>
@@ -139,7 +139,7 @@ export default function AboutUsPage() {
                   key={stat.name}
                   className=" dark:bg-gray-900 p-6 rounded-xl shadow-md"
                 >
-                  <div className="text-3xl font-bold text-gray-600 dark:text-gray-300 mb-2">
+                  <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-300 mb-2">
                     {stat.value}{stat.suffix}
                   </div>
                   <div className="text-lg text-gray-700 dark:text-gray-200">{stat.name}</div>
@@ -176,7 +176,7 @@ export default function AboutUsPage() {
                   alt={member.name}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-full"
+                  className="rounded-full border-yellow-300 border"
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">{member.name}</h3>
@@ -198,7 +198,7 @@ export default function AboutUsPage() {
           ].map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger className="text-gray-800 dark:text-gray-200">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-gray-700 dark:text-gray-300">{faq.answer}</AccordionContent>
+              <AccordionContent className="text-yellow-700 dark:text-yellow-300">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
