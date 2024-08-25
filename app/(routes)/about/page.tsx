@@ -100,7 +100,7 @@ export default function AboutUsPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200">We are Creative Since 2005</h2>
               <p className="text-lg">
-                Driven by a passion for seamless user experiences, we've meticulously curated our approach to empower creators, designers, and developers alike. Our mission is to provide comprehensive solutions, enabling you to build intuitive, beautiful interfaces that resonate with users on every interaction.
+                Driven by a passion for seamless user experiences, we&apos;ve meticulously curated our approach to empower creators, designers, and developers alike. Our mission is to provide comprehensive solutions, enabling you to build intuitive, beautiful interfaces that resonate with users on every interaction.
               </p>
               <Button className=" text-white hover:bg-gray-700 dark:0 dark:hover: transition duration-300">
                 Learn More
@@ -113,7 +113,7 @@ export default function AboutUsPage() {
             <div className="space-y-6 order-2 lg:order-1">
               <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200">Our Innovative Approach</h2>
               <p className="text-lg">
-                At the heart of our success lies an unwavering commitment to innovation. We continuously push the boundaries of what's possible, leveraging cutting-edge technologies and methodologies to deliver exceptional results. Our team's diverse expertise allows us to tackle complex challenges with creative solutions that drive your business forward.
+                At the heart of our success lies an unwavering commitment to innovation. We continuously push the boundaries of what&apos;s possible, leveraging cutting-edge technologies and methodologies to deliver exceptional results. Our team&apos;s diverse expertise allows us to tackle complex challenges with creative solutions that drive your business forward.
               </p>
               <Button className=" text-white hover:bg-gray-700 dark:0 dark:hover: transition duration-300">
                 Discover More
@@ -207,7 +207,7 @@ export default function AboutUsPage() {
       {/* Call to Action */}
       <div className="text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200">Ready to Start Your Project?</h2>
-        <p className="mb-6 text-gray-700 dark:text-gray-300">Let's discuss how we can bring your vision to life.</p>
+        <p className="mb-6 text-gray-700 dark:text-gray-300">Let&apos;s discuss how we can bring your vision to life.</p>
         <Button size="lg" className=" text-white hover:bg-gray-700 dark:0 dark:hover:">Contact Us Today</Button>
       </div>
     </div>
