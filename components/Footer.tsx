@@ -6,13 +6,13 @@ export default function Footer() {
   
   <div className="text-center">
     <div>
-      <a className="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">GeniusTech</a>
+      <a className="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">PrimeTech</a>
     </div>
     
 
     <div className="mt-3">
-      <p className="text-gray-500 dark:text-white">We&apos;re part of the <a className="text-Gray-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-yellow-500" href="#">GeniusTech</a> family.</p>
-      <p className="text-gray-500 dark:text-white">© GeniusTech. 2024 All rights reserved.</p>
+      <p className="text-gray-500 dark:text-white">We&apos;re part of the <a className="text-Gray-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-yellow-500" href="#">Baodi</a> family.</p>
+      <p className="text-gray-500 dark:text-white">© PrimeTech. 2024 All rights reserved.</p>
     </div>
 
     

@@ -16,7 +16,7 @@ export default function Hero() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent"
             words={["Websites", "Webapps", "Flyers", "Desktop Apps", "Mobile Apps"]}
           />{" "}
-          With GeniusTech
+          With PrimeTech
         </h1>
       </div>
       <p className="max-w-xl text-balance text-center text-base tracking-tight text-black md:text-center md:text-lg dark:font-medium dark:text-white">

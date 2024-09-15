@@ -36,7 +36,7 @@ export default function Navbar() {
             <nav className="bg-white/30 dark:bg-white backdrop-blur-md rounded-[26px] py-2 px-4 shadow-lg">
               <div className="flex items-center justify-between">
                 <Link href="/" className="flex-none">
-                    <p className="text-black text-xl font-bold">GeniusTech</p>
+                    <p className="text-black text-xl font-bold">PrimeTech</p>
                 </Link>
     
                 {/* Desktop Navigation */}

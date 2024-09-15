@@ -25,10 +25,10 @@ export default function Portfolio(){
 
         <div className="grow">
           <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-white dark:group-hover:text-white">
-            Studio by GeniusTech
+            Studio by PrimeTech
           </h3>
           <p className="mt-3 text-gray-600 dark:text-white">
-            Produce professional, reliable streams easily leveraging GeniusTech&apos;s innovative broadcast studio
+            Produce professional, reliable streams easily leveraging PrimeTech&apos;s innovative broadcast studio
           </p>
           <p className="mt-4 inline-flex items-center gap-x-1 text-sm text-yellow-400 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-yellow-400">
             Preview
